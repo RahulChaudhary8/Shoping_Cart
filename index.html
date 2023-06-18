@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shoping Cart</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="footer.css">
+  <script type="text/javascript" src="cart.js"></script>
+</head>
+  <body>
+    <div class='header'>
+      <div class='title'>
+        <h4>Ecommerce</h4>
+        <p>
+          <strong>Cart:</strong>
+          <a href="cart.html" id="cart_value"></a>
+          <a href="" class="clear_cart "><i class="far fa-trash-alt"></i></a>
+        </p>
+      </div>
+    </div>
+    <div class='body'>
+      <div class='container'>
+
+        <div class='card' id="first_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://images-na.ssl-images-amazon.com/images/I/51zoCSGjgeL._AC_SX679_.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              BEATS HEADPHONE
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              6999.25
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="first">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+
+        <div class='card' id="second_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://cdn1.smartprix.com/rx-ijm5SaXcD-w1200-h1200/jm5SaXcD.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Apple iPhone
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              96999.55
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="second">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+
+        <div class='card' id="third_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://m.media-amazon.com/images/I/61QRgOgBx0L._SX679_.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              OnePlus Nord 
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              19999.65
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="third">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+
+
+        <div class='card' id="fourth_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://www.grootgadgets.com/wp-content/uploads/2017/03/Canon-70-200mm-Lens-mug-White-replica-groot-gadgets-1-400x400.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Camera Lens
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              4999.45
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="fourth">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+        <div class='card' id="fifth_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://img.freepik.com/premium-photo/indian-white-motorbike-white-background_221414-914.jpg?w=1060'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              White motorbike
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              88999.45
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="fifth">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+
+
+        <div class='card' id="sixth_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://img.freepik.com/free-photo/open-laptop_144627-12148.jpg?w=996&t=st=1686720983~exp=1686721583~hmac=59e91338503c90f72ed7aa9ea837fe017d50a0a37567096adfd2bf72ec866fe6g'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+             Laptop
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              45999.15
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="sixth">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+        <div class='card' id="seventh_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://img.freepik.com/free-photo/stylish-golden-watch-white-surface_181624-27078.jpg?w=740&t=st=1686720870~exp=1686721470~hmac=4459a719dc4e279ca97971fc06436589f4140e717967081c440a5d64e9d09f02'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Golden watch
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              5999.25
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="seventh">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+        <div class='card' id="eighth_product">
+          <div class='card-content'>
+            <div class='img' id="_view">
+              <img src='https://c1.wallpaperflare.com/preview/630/578/513/caps-k%C5%A1iltofka-puma-baseball.jpg'>
+            </div>
+          </div>
+          <div class='card-description'>
+            <div class='title'>
+              Caps, Puma
+            </div>
+            <div class='cart'>
+              <span class='lnr lnr-cart'></span>
+            </div>
+          </div>
+          <div class='top-bar'>
+            ₹
+            <span class="price">
+              599.45
+            </span>
+            <span class='float-right lnr lnr-heart'></span>
+            <a href="#" class="add_to_cart cart_button ml-3" id="eighth">
+              Add To Cart
+            </a>
+            <a href="#"  class="view cart_button ml-3">View</a>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-heading footer-1">
+            <h2>About Us</h2>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Investers</a>
+            <a href="#">Term of Services</a>
+          </div>
+          <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a>
+            <a href="#">Supports</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorship</a>
+            <a href="#">Term of Services</a>
+          </div>
+          <div class="footer-email-form">
+            <h2>Thanks For Shoping</h2>
+            <input type="email" placeholder="Enter your email address" id="footer-email">
+            <input type="submit" value="Sign Up" id="footer-email-btn">
+            <div class="image-container">
+              <h2>Social Media</h2>
+              <a href="https://www.instagram.com/rahul.chaudhary.18400/"> <img class="image" src="instagram.jfif"
+                  alt="Instagram"> </a>
+              <a href="https://twitter.com/RahulMa37660897"> <img class="image" src="twitter.png" alt="Twitter">
+              </a>
+              <a href="https://www.facebook.com/rahul.mahi.18400"> <img class="image" src="facebook.png"
+                  alt="Facebook"> </a>
+              <a href="https://www.linkedin.com/in/rahul-chaudhary-b5899a197/"> <img class="image"
+                  src="linkedin.jfif" alt="Linkedin"> </a>
+              <a href="https://github.com/RahulChaudhary8"> <img class="image" src="Github.png" alt="Github"> </a>
+            </div>
+          </div>
+         
+        </div>
+    
+      </div>
+  <h2 style="text-align: center;">||© Rahul Chaudhary||2023||</h2>
+    </div>
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
